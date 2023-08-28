@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <label>Kondisi: </label>
+    <select id="kondisi">
+        <option value="lapar">Lapar</option>
+        <option value="tidak">Tidak</option>
+        <option value="tidak_tahu">Tidak Tahu</option>
+    </select>
+    <button onclick="cek_lapar()">Cek Lapar</button>
+    <p id="hasil"></p>
+
+    <script>
+        function cek_lapar() {
+            // =, memasukkan isi nilai variable
+            let kondisi = document.getElementById("kondisi").value;
+            let hasil;
+            // ==, membandingkan, tipe data tidak harus sama
+            // ===, membandingkan, tipe data harus sama
+            if (kondisi === "lapar") {
+                hasil = "Waktu Makan";
+            } else if (kondisi === "tidak") {
+                hasil = "Bukan Waktu Makan";
+            } else {
+                hasil = "Boleh Nyemil";
+            }
+            document.getElementById("hasil").innerHTML = hasil;
+        }
+    </script>
+</body>
+</html>

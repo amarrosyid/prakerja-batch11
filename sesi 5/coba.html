@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="message"></div>
+
+<script>
+var person = prompt("Please enter your name", "");
+var input_again = true;
+
+while (input_again) {
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+    document.getElementById("message").innerHTML = txt;
+    input_again = false;
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+    document.getElementById("message").innerHTML = txt;
+    input_again = false;
+
+    if (confirm("Want to enter a name again?") == true) {
+    	person = prompt("Please enter your name", "");
+      input_again = true;
+    } else {
+      input_again = false;
+    }
+  }
+}
+</script>
+
+</body>
+</html>

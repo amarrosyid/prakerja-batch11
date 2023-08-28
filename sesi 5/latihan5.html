@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object</title>
+</head>
+<body>
+    <div id="hasil"></div>
+    <script>
+        //object = pakai {}
+        let manusia = {
+            nama: "amar", 
+            usia:23, 
+            lokasi: "jogja"
+        };
+        document.getElementById("hasil").innerHTML = 
+            manusia.nama + " tinggal di " + manusia.lokasi;
+
+        document.getElementById("hasil").innerHTML = 
+            `${manusia.nama} tinggal di ${manusia.lokasi}`;
+
+    </script>
+    
+</body>
+</html>

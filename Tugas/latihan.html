@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body>
+    <label for="Pesan">Pesan :</label><input type="text" id="Pesan"><br>
+    <label for="jumlah">Berapa kali :</label><input type="number" id="jumlah"><br>
+
+    <button onclick="cetak()">Cetak!</button><br><br>
+    
+    <ol id="hasil"></ol>
+
+    <script>
+        function cetak(){
+            const pesan = document.getElementById("Pesan").value;
+            const Jumlah = parseInt(document.getElementById("jumlah").value);
+            const tampil = document.getElementById("hasil");
+            
+            tampil.innerHTML = "";
+
+            let i = 0;
+            while (i < Jumlah) {
+                var listItem = document.createElement("li");
+                listItem.innerHTML = pesan ;
+                tampil.appendChild(listItem);
+                i++;
+            }   
+        }
+    </script>
+
+</body>
+</html>

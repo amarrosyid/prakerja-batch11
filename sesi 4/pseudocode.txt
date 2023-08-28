@@ -1,0 +1,20 @@
+ALGORITMA PSEUDOCODE LUAS LINGKARAN
+===================================
+SET "phi" = 3,14
+READ and SAVE "jari-jari lingkaran"
+
+COMPUTE "jari-jari lingkaran" * "jari-jari lingkaran" * "phi"
+SAVE hasil perhitungan
+SHOW hasil
+===================================
+
+ALGORITMA PSEUDOCODE KELILING LINGKARAN
+=======================================
+
+SET phi = 3,14
+READ and SAVE "diameter lingkaran"
+
+COMPUTE "phi" * "diameter lingkaran"
+SAVE hasil perhitungan
+SHOW hasil
+======================================= 

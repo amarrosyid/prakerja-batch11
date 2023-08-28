@@ -33,6 +33,7 @@ nav ul li a:hover {
 
 section {
   margin: 20px;
+  
 }
 
 form {
@@ -53,7 +54,44 @@ form input[type="submit"] {
 }
 
 /* CSS untuk section profile disini */
-section div{
+#container{
   display: flex;
   flex-direction: row;
+}
+
+#profile{
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+}
+
+.profile-photo{
+  flex: 4;
+}
+
+.profile-text{
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+h2{
+  color: grey;
+  font-size: small;
+}
+
+#profile-detail{
+  background-color: blueviolet;
+  flex: content;
+}
+
+/* .container section{
+  display: flex;
+  flex-direction: row;
+} */
+
+div img{
+  border-radius: 100%;
+  border: 10px solid gold;
 }

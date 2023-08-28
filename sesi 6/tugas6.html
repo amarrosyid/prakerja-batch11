@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tugas Mandiri 6</title>
+</head>
+
+<body>
+
+    <p class="paragraf1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    <p class="paragraf2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    <p class="paragraf3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+
+    <script>
+    function flash1() {
+        var textElements = document.getElementsByClassName('paragraf1');
+        for (var i = 0; i < textElements.length; i++) {
+            var text = textElements[i];
+            text.style.color = (text.style.color == 'red') ? 'black' : 'red';
+        }
+    }
+    var clr = setInterval(flash1, 1000);
+    function flash2() {
+        var textElements = document.getElementsByClassName('paragraf2');
+        for (var i = 0; i < textElements.length; i++) {
+            var text = textElements[i];
+            text.style.color = (text.style.color == 'green') ? 'black' : 'green';
+        }
+    }
+    var clr = setInterval(flash2, 1000);
+    function flash3() {
+        var textElements = document.getElementsByClassName('paragraf3');
+        for (var i = 0; i < textElements.length; i++) {
+            var text = textElements[i];
+            text.style.color = (text.style.color == 'blue') ? 'black' : 'blue';
+        }
+    }
+    var clr = setInterval(flash3, 1000);
+    </script>
+
+</body>
+
+</html>

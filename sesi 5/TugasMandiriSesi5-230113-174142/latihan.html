@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body>
+    <label>Pesan :</label><input id="teks" type="text" ><br>
+    <label>Berapa Kali :</label><input id="kali" type="number" ><br>
+    <button>Cetak!</button>
+    <ol id="hasil"></ol>
+
+    <script>        
+        const massage = document.getElementById("teks").value;
+        const loop = document.getElementById("kali").value;
+        let hasil;
+
+        function cetak(){
+            document.getElementById("hasil").innerHTML=hasil;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body>
+    <label>Pesan : </label><input id="text" type="text" name="teks"><br>
+    <label>Berapa kali : </label><input id="ulang" type="number" name="loop"><br>
+    <button onclick="cetak()">Cetak!</button>
+    <ol id="hasil"></ol>
+
+    <script>
+        // const nama_variabel= document.getElementById("nama_variabel")
+
+        function cetak(){
+            const pesan = document.getElementById("text").value;
+            // const loop = document.getElementById("ulang")
+            const massage = ""
+
+            // for(let i = 0; i < loop; i++){
+            // massage += pesan.i.value + "<br>"
+            // }
+            document.getElementById("hasil").innerHTML = massage;
+        }
+
+    </script>
+</body>
+</html>
